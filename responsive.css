@@ -28,7 +28,7 @@
     }
 
     nav {
-        margin: 16px 0 64px 0;
+        margin: 16px 0 0 0;
     }
 
     nav ul {
@@ -42,6 +42,9 @@
     /* Hero section style */
     .hero-description-container {
         width: 100%;
+    }
+    .hero-section{
+        padding: 64px 0;
     }
 
     .hero-section h1 {
@@ -75,9 +78,21 @@
     .google-play div h4 {
         font-size: 20px;
     }
+    .image-container {
+        height: 280px;
+        width: 100%;
+    }
 
     .hero-secion-desktopImg {
         width: 100%;
+        height: auto;
+    }
+
+    .hero-secion-mobileImg {
+        height: 177px;
+        width: 88px;
+        right: 30px;
+        top: 80px;
     }
 
     .brand-section {
