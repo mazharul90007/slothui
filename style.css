@@ -80,22 +80,22 @@ a {
 
 }
 
-.btn-dark:hover {
+/* .btn-dark:hover {
     background-color: white;
     color: black;
     border: 1px solid #CBD5E1
-}
+} */
 
 .btn-light {
-    background-color: white;
+    background-color: transparent;
     color: black;
     border: 1px solid #CBD5E1
 }
 
-.btn-light:hover {
+/* .btn-light:hover {
     background-color: var(--brand-color);
     color: white;
-}
+} */
 
 .badge {
     background-color: #EEF2FF;
@@ -123,6 +123,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 16px 0 96px 0;
     padding: 16px 0;
 }
@@ -160,14 +161,11 @@ nav ul {
     display: flex;
     gap: 8px;
 }
-
-/* .hero-section {
-    padding-bottom: 96px;
-} */
+.menu-button {
+    display: none;
+}
 
 .hero-description {
-    /* width: 800px;
-    margin: 0 auto; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -280,12 +278,16 @@ nav ul {
 }
 
 .brand-section .first-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
     justify-content: space-between;
 }
 
 .brand-section .second-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
     justify-content: space-around;
 }
 
@@ -380,6 +382,10 @@ nav ul {
     font-weight: 700;
     font-size: 18px;
     color: var(--text-secondary-color);
+}
+.success-card-middle{
+    border-left: 1px solid #CBD5E1;
+    border-right: 1px solid #CBD5E1;
 }
 
 /* Success section style ends */
@@ -479,7 +485,6 @@ nav ul {
     border: 1px solid #E2E8F0;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 .testimonial-grid .card p {
@@ -685,11 +690,8 @@ nav ul {
 }
 
 .app-container {
-
-    /* display: flex; */
     align-items: stretch;
     min-height: 650px;
-    /* position: relative; */
 }
 
 .app-container-description {
@@ -781,6 +783,17 @@ footer {
 
 .copyRight .icon {
     margin: 0 auto;
+    padding: 12px 14px;
+    border: 1px solid #CBD5E1;
+    border-radius: 100px;
+    
+}
+.copyRight .icon img{
+    height: 24px;
+    width: 24px;
+}
+.iconMobile {
+    display: none;
 }
 
 .copyRight p {
