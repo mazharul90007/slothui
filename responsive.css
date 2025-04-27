@@ -43,7 +43,8 @@
     .hero-description-container {
         width: 100%;
     }
-    .hero-section{
+
+    .hero-section {
         padding: 64px 0;
     }
 
@@ -78,6 +79,7 @@
     .google-play div h4 {
         font-size: 20px;
     }
+
     .image-container {
         height: 280px;
         width: 100%;
@@ -306,6 +308,7 @@
         gap: 0;
         align-items: center;
     }
+
     .copyRight p {
         margin: 16px 0 32px;
     }
@@ -326,9 +329,154 @@
         height: 24px;
         width: 24px;
     }
+
     .copyRight p {
         text-align: center;
     }
 
+
+}
+
+/* ========Tablet Design ========= */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Common style */
+    .container {
+        margin: 0 16px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .description-container {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .heading {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    nav {
+        margin: 16px 0 0 0;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .authentication {
+        display: none;
+    }
+
+    /* Hero Section style */
+    .hero-section {
+        padding: 64px 0;
+    }
+
+
+
+    .hero-description-container {
+        width: 100%;
+    }
+
+    .brandImg-container .first-row li img,
+    .brandImg-container .second-row li img {
+        width: 100%;
+        height: 90px;
+    }
+
+    .description-container{
+        width: 100%;
+    }
+
+    .target {
+        padding: 64px 16px;
+    }
+
+    .targetImg-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+    }
+
+    .target-description {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .targetImg-container img {
+        height: auto;
+        width: 100%;
+    }
+
+    .targetImg-container ul {
+        gap: 8px;
+        padding-right: 24px;
+    }
+
+    .targetImg-container ul li {
+        padding: 24px 0px 24px 24px;
+    }
+
+    /* Office section */
+    .office-card-container ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+
+    }
+
+    /* app download */
+    .app {
+        position: static;
+        padding: 64px 16px;
+    }
+
+    .app-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app-container-description {
+        z-index: 1;
+        padding: 0;
+        max-width: 100%;
+        position: static;
+    }
+
+    .appImg {
+        flex: 1;
+        object-fit: cover;
+        object-position: center;
+        position: static;
+    }
+
+    .app-container-description p {
+        font-size: 16px;
+        margin: 24px 0 32px 0;
+    }
+
+    .appSection-button ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 48px;
+    }
+
+    .btn-learn-more,
+    .btn-get-started {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .links-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
 
 }
