@@ -3,10 +3,8 @@ document.querySelector('.load-more-btn').addEventListener('click', function () {
   const grid = document.querySelector('.testimonial-grid');
   const button = this;
 
-  // Toggle active state
   grid.classList.toggle('active');
 
-  // Change button text
   if (grid.classList.contains('active')) {
     button.textContent = 'Show Less';
   } else {
