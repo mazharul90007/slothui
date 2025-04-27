@@ -554,6 +554,9 @@ nav ul {
     font-size: 16px;
     color: var(--text-secondary-color);
 }
+.load-more-btn{
+    display: none;
+}
 
 /* Testimonials section style ends */
 
